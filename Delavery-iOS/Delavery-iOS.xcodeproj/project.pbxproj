@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F9F380D2C678F470004CCF5 /* Delavery_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F380C2C678F470004CCF5 /* Delavery_iOSApp.swift */; };
+		5F9F380F2C678F470004CCF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F380E2C678F470004CCF5 /* ContentView.swift */; };
+		5F9F38112C678F490004CCF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F38102C678F490004CCF5 /* Assets.xcassets */; };
+		5F9F38142C678F490004CCF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F38132C678F490004CCF5 /* Preview Assets.xcassets */; };
+		5F9F38222C678FC20004CCF5 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F9F38212C678FC20004CCF5 /* ManagedSettings.framework */; };
+		5F9F38252C678FC20004CCF5 /* ShieldActionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F38242C678FC20004CCF5 /* ShieldActionExtension.swift */; };
+		5F9F382A2C678FC20004CCF5 /* DelaverySheildAction.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5F9F381F2C678FC20004CCF5 /* DelaverySheildAction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5F9F38342C678FD30004CCF5 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F9F38212C678FC20004CCF5 /* ManagedSettings.framework */; };
+		5F9F38362C678FD30004CCF5 /* ManagedSettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F9F38352C678FD30004CCF5 /* ManagedSettingsUI.framework */; };
+		5F9F38392C678FD30004CCF5 /* ShieldConfigurationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F38382C678FD30004CCF5 /* ShieldConfigurationExtension.swift */; };
+		5F9F383E2C678FD30004CCF5 /* DelaverySheildConfiguration.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5F9F38332C678FD30004CCF5 /* DelaverySheildConfiguration.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F9F38282C678FC20004CCF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F9F38012C678F470004CCF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F9F381E2C678FC20004CCF5;
+			remoteInfo = DelaverySheildAction;
+		};
+		5F9F383C2C678FD30004CCF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F9F38012C678F470004CCF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F9F38322C678FD30004CCF5;
+			remoteInfo = DelaverySheildConfiguration;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F9F382E2C678FC20004CCF5 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5F9F383E2C678FD30004CCF5 /* DelaverySheildConfiguration.appex in Embed Foundation Extensions */,
+				5F9F382A2C678FC20004CCF5 /* DelaverySheildAction.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5F9F38092C678F470004CCF5 /* Delavery-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Delavery-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F9F380C2C678F470004CCF5 /* Delavery_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delavery_iOSApp.swift; sourceTree = "<group>"; };
+		5F9F380E2C678F470004CCF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5F9F38102C678F490004CCF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F9F38132C678F490004CCF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5F9F381A2C678F670004CCF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5F9F381F2C678FC20004CCF5 /* DelaverySheildAction.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DelaverySheildAction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F9F38212C678FC20004CCF5 /* ManagedSettings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettings.framework; path = System/Library/Frameworks/ManagedSettings.framework; sourceTree = SDKROOT; };
+		5F9F38242C678FC20004CCF5 /* ShieldActionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShieldActionExtension.swift; sourceTree = "<group>"; };
+		5F9F38262C678FC20004CCF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F9F38272C678FC20004CCF5 /* DelaverySheildAction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DelaverySheildAction.entitlements; sourceTree = "<group>"; };
+		5F9F38332C678FD30004CCF5 /* DelaverySheildConfiguration.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DelaverySheildConfiguration.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F9F38352C678FD30004CCF5 /* ManagedSettingsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettingsUI.framework; path = System/Library/Frameworks/ManagedSettingsUI.framework; sourceTree = SDKROOT; };
+		5F9F38382C678FD30004CCF5 /* ShieldConfigurationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShieldConfigurationExtension.swift; sourceTree = "<group>"; };
+		5F9F383A2C678FD30004CCF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F9F383B2C678FD30004CCF5 /* DelaverySheildConfiguration.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DelaverySheildConfiguration.entitlements; sourceTree = "<group>"; };
+		5F9F38422C6790130004CCF5 /* Delavery-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Delavery-iOS.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F9F38062C678F470004CCF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F9F381C2C678FC20004CCF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9F38222C678FC20004CCF5 /* ManagedSettings.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F9F38302C678FD30004CCF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9F38342C678FD30004CCF5 /* ManagedSettings.framework in Frameworks */,
+				5F9F38362C678FD30004CCF5 /* ManagedSettingsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F9F38002C678F470004CCF5 = {
+			isa = PBXGroup;
+			children = (
+				5F9F380B2C678F470004CCF5 /* Delavery-iOS */,
+				5F9F38232C678FC20004CCF5 /* DelaverySheildAction */,
+				5F9F38372C678FD30004CCF5 /* DelaverySheildConfiguration */,
+				5F9F38202C678FC20004CCF5 /* Frameworks */,
+				5F9F380A2C678F470004CCF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F9F380A2C678F470004CCF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F9F38092C678F470004CCF5 /* Delavery-iOS.app */,
+				5F9F381F2C678FC20004CCF5 /* DelaverySheildAction.appex */,
+				5F9F38332C678FD30004CCF5 /* DelaverySheildConfiguration.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F9F380B2C678F470004CCF5 /* Delavery-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5F9F38422C6790130004CCF5 /* Delavery-iOS.entitlements */,
+				5F9F381A2C678F670004CCF5 /* Info.plist */,
+				5F9F380C2C678F470004CCF5 /* Delavery_iOSApp.swift */,
+				5F9F380E2C678F470004CCF5 /* ContentView.swift */,
+				5F9F38102C678F490004CCF5 /* Assets.xcassets */,
+				5F9F38122C678F490004CCF5 /* Preview Content */,
+			);
+			path = "Delavery-iOS";
+			sourceTree = "<group>";
+		};
+		5F9F38122C678F490004CCF5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5F9F38132C678F490004CCF5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5F9F38202C678FC20004CCF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F9F38212C678FC20004CCF5 /* ManagedSettings.framework */,
+				5F9F38352C678FD30004CCF5 /* ManagedSettingsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F9F38232C678FC20004CCF5 /* DelaverySheildAction */ = {
+			isa = PBXGroup;
+			children = (
+				5F9F38242C678FC20004CCF5 /* ShieldActionExtension.swift */,
+				5F9F38262C678FC20004CCF5 /* Info.plist */,
+				5F9F38272C678FC20004CCF5 /* DelaverySheildAction.entitlements */,
+			);
+			path = DelaverySheildAction;
+			sourceTree = "<group>";
+		};
+		5F9F38372C678FD30004CCF5 /* DelaverySheildConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				5F9F38382C678FD30004CCF5 /* ShieldConfigurationExtension.swift */,
+				5F9F383A2C678FD30004CCF5 /* Info.plist */,
+				5F9F383B2C678FD30004CCF5 /* DelaverySheildConfiguration.entitlements */,
+			);
+			path = DelaverySheildConfiguration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F9F38082C678F470004CCF5 /* Delavery-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F9F38172C678F490004CCF5 /* Build configuration list for PBXNativeTarget "Delavery-iOS" */;
+			buildPhases = (
+				5F9F38052C678F470004CCF5 /* Sources */,
+				5F9F38062C678F470004CCF5 /* Frameworks */,
+				5F9F38072C678F470004CCF5 /* Resources */,
+				5F9F382E2C678FC20004CCF5 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F9F38292C678FC20004CCF5 /* PBXTargetDependency */,
+				5F9F383D2C678FD30004CCF5 /* PBXTargetDependency */,
+			);
+			name = "Delavery-iOS";
+			productName = "Delavery-iOS";
+			productReference = 5F9F38092C678F470004CCF5 /* Delavery-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F9F381E2C678FC20004CCF5 /* DelaverySheildAction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F9F382B2C678FC20004CCF5 /* Build configuration list for PBXNativeTarget "DelaverySheildAction" */;
+			buildPhases = (
+				5F9F381B2C678FC20004CCF5 /* Sources */,
+				5F9F381C2C678FC20004CCF5 /* Frameworks */,
+				5F9F381D2C678FC20004CCF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DelaverySheildAction;
+			productName = DelaverySheildAction;
+			productReference = 5F9F381F2C678FC20004CCF5 /* DelaverySheildAction.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		5F9F38322C678FD30004CCF5 /* DelaverySheildConfiguration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F9F383F2C678FD30004CCF5 /* Build configuration list for PBXNativeTarget "DelaverySheildConfiguration" */;
+			buildPhases = (
+				5F9F382F2C678FD30004CCF5 /* Sources */,
+				5F9F38302C678FD30004CCF5 /* Frameworks */,
+				5F9F38312C678FD30004CCF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DelaverySheildConfiguration;
+			productName = DelaverySheildConfiguration;
+			productReference = 5F9F38332C678FD30004CCF5 /* DelaverySheildConfiguration.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F9F38012C678F470004CCF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					5F9F38082C678F470004CCF5 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					5F9F381E2C678FC20004CCF5 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					5F9F38322C678FD30004CCF5 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 5F9F38042C678F470004CCF5 /* Build configuration list for PBXProject "Delavery-iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F9F38002C678F470004CCF5;
+			productRefGroup = 5F9F380A2C678F470004CCF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F9F38082C678F470004CCF5 /* Delavery-iOS */,
+				5F9F381E2C678FC20004CCF5 /* DelaverySheildAction */,
+				5F9F38322C678FD30004CCF5 /* DelaverySheildConfiguration */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F9F38072C678F470004CCF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9F38142C678F490004CCF5 /* Preview Assets.xcassets in Resources */,
+				5F9F38112C678F490004CCF5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F9F381D2C678FC20004CCF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F9F38312C678FD30004CCF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F9F38052C678F470004CCF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9F380F2C678F470004CCF5 /* ContentView.swift in Sources */,
+				5F9F380D2C678F470004CCF5 /* Delavery_iOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F9F381B2C678FC20004CCF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9F38252C678FC20004CCF5 /* ShieldActionExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F9F382F2C678FD30004CCF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9F38392C678FD30004CCF5 /* ShieldConfigurationExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F9F38292C678FC20004CCF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F9F381E2C678FC20004CCF5 /* DelaverySheildAction */;
+			targetProxy = 5F9F38282C678FC20004CCF5 /* PBXContainerItemProxy */;
+		};
+		5F9F383D2C678FD30004CCF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F9F38322C678FD30004CCF5 /* DelaverySheildConfiguration */;
+			targetProxy = 5F9F383C2C678FD30004CCF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5F9F38152C678F490004CCF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F9F38162C678F490004CCF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F9F38182C678F490004CCF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Delavery-iOS/Delavery-iOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Delavery-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = P2UJWPTGRX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Delavery-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inprogress.Delavery-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5F9F38192C678F490004CCF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Delavery-iOS/Delavery-iOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Delavery-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = P2UJWPTGRX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Delavery-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inprogress.Delavery-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5F9F382C2C678FC20004CCF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DelaverySheildAction/DelaverySheildAction.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P2UJWPTGRX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DelaverySheildAction/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DelaverySheildAction;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inprogress.Delavery-iOS.DelaverySheildAction";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5F9F382D2C678FC20004CCF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DelaverySheildAction/DelaverySheildAction.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P2UJWPTGRX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DelaverySheildAction/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DelaverySheildAction;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inprogress.Delavery-iOS.DelaverySheildAction";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5F9F38402C678FD30004CCF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DelaverySheildConfiguration/DelaverySheildConfiguration.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P2UJWPTGRX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DelaverySheildConfiguration/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DelaverySheildConfiguration;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inprogress.Delavery-iOS.DelaverySheildConfiguration";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5F9F38412C678FD30004CCF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DelaverySheildConfiguration/DelaverySheildConfiguration.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P2UJWPTGRX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DelaverySheildConfiguration/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DelaverySheildConfiguration;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inprogress.Delavery-iOS.DelaverySheildConfiguration";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F9F38042C678F470004CCF5 /* Build configuration list for PBXProject "Delavery-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F9F38152C678F490004CCF5 /* Debug */,
+				5F9F38162C678F490004CCF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F9F38172C678F490004CCF5 /* Build configuration list for PBXNativeTarget "Delavery-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F9F38182C678F490004CCF5 /* Debug */,
+				5F9F38192C678F490004CCF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F9F382B2C678FC20004CCF5 /* Build configuration list for PBXNativeTarget "DelaverySheildAction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F9F382C2C678FC20004CCF5 /* Debug */,
+				5F9F382D2C678FC20004CCF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F9F383F2C678FD30004CCF5 /* Build configuration list for PBXNativeTarget "DelaverySheildConfiguration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F9F38402C678FD30004CCF5 /* Debug */,
+				5F9F38412C678FD30004CCF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F9F38012C678F470004CCF5 /* Project object */;
+}
