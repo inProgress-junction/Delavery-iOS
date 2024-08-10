@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct Delavery_iOSApp: App {
+    @UIApplicationDelegateAdaptor private var appDelegate: MyAppDelegate
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
