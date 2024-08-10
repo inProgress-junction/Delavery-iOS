@@ -28,13 +28,10 @@ class MyAppDelegate: NSObject, UIApplicationDelegate, ObservableObject {
 
 extension MyAppDelegate: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        // 보내기 전에 노티피케이션을 핸들링할 수 있다.
         completionHandler([.banner, .list, .badge, .sound])
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        let targetScene = response.notification.request.content.userInfo["targetScene"]
-        
         completionHandler()
     }
 }
