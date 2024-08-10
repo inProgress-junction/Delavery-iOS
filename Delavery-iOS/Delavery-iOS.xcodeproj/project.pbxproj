@@ -26,6 +26,7 @@
 		5F9F384E2C67CF6F0004CCF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F384D2C67CF6F0004CCF5 /* AppDelegate.swift */; };
 		5F9F384F2C67CF6F0004CCF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F384D2C67CF6F0004CCF5 /* AppDelegate.swift */; };
 		5F9F38502C67CF6F0004CCF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F384D2C67CF6F0004CCF5 /* AppDelegate.swift */; };
+		5F9F38532C67D2DD0004CCF5 /* AppPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F38522C67D2DD0004CCF5 /* AppPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		5F9F38422C6790130004CCF5 /* Delavery-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Delavery-iOS.entitlements"; sourceTree = "<group>"; };
 		5F9F38452C67C68A0004CCF5 /* ColorAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAsset.xcassets; sourceTree = "<group>"; };
 		5F9F384D2C67CF6F0004CCF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F9F38522C67D2DD0004CCF5 /* AppPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		5F9F380B2C678F470004CCF5 /* Delavery-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				5F9F38512C67D1C10004CCF5 /* inho */,
 				5F9F38422C6790130004CCF5 /* Delavery-iOS.entitlements */,
 				5F9F381A2C678F670004CCF5 /* Info.plist */,
 				5F9F380C2C678F470004CCF5 /* Delavery_iOSApp.swift */,
@@ -181,6 +184,14 @@
 				5F9F383B2C678FD30004CCF5 /* DelaverySheildConfiguration.entitlements */,
 			);
 			path = DelaverySheildConfiguration;
+			sourceTree = "<group>";
+		};
+		5F9F38512C67D1C10004CCF5 /* inho */ = {
+			isa = PBXGroup;
+			children = (
+				5F9F38522C67D2DD0004CCF5 /* AppPickerView.swift */,
+			);
+			path = inho;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9F38532C67D2DD0004CCF5 /* AppPickerView.swift in Sources */,
 				5F9F384E2C67CF6F0004CCF5 /* AppDelegate.swift in Sources */,
 				5F9F380F2C678F470004CCF5 /* ContentView.swift in Sources */,
 				5F9F380D2C678F470004CCF5 /* Delavery_iOSApp.swift in Sources */,
