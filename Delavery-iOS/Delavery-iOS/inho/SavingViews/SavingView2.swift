@@ -10,6 +10,7 @@ import SwiftUI
 struct SavingView2: View {
     @State var accountNumber = ""
     @State var showBankModal = false
+    @State var bankType: BankType?
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -40,10 +41,15 @@ struct SavingView2: View {
             Spacer().frame(height: 40)
             
             Button(action: {
-                // FIXME: Add Action 은행 나오는 모달
+                showBankModal.toggle()
             }) {
                 HStack {
-                    Text("Select a bank")
+                    if let bankType {
+                        Text(bankType.englishFullName)
+                            .foregroundStyle(Color.black)
+                    } else {
+                        Text("Select a bank")
+                    }
                     Spacer()
                     Image(systemName: "chevron.down")
                 }
@@ -65,7 +71,8 @@ struct SavingView2: View {
         }
         .padding(.horizontal, 40)
         .sheet(isPresented: $showBankModal, content: {
-            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Sheet Content")/*@END_MENU_TOKEN@*/
+            SelectBankView(bank: $bankType, showModal: $showBankModal)
+                .presentationDetents([.medium])
         })
     }
 }

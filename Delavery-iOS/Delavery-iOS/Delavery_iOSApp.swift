@@ -13,7 +13,7 @@ struct Delavery_iOSApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SavingView2()
         }
     }
 }
