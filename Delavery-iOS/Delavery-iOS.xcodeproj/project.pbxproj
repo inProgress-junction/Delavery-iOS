@@ -18,6 +18,11 @@
 		5F9F38362C678FD30004CCF5 /* ManagedSettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F9F38352C678FD30004CCF5 /* ManagedSettingsUI.framework */; };
 		5F9F38392C678FD30004CCF5 /* ShieldConfigurationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F38382C678FD30004CCF5 /* ShieldConfigurationExtension.swift */; };
 		5F9F383E2C678FD30004CCF5 /* DelaverySheildConfiguration.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5F9F38332C678FD30004CCF5 /* DelaverySheildConfiguration.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5F9F38462C67C68A0004CCF5 /* ColorAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F38452C67C68A0004CCF5 /* ColorAsset.xcassets */; };
+		5F9F38472C67C68A0004CCF5 /* ColorAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F38452C67C68A0004CCF5 /* ColorAsset.xcassets */; };
+		5F9F38482C67C68A0004CCF5 /* ColorAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F38452C67C68A0004CCF5 /* ColorAsset.xcassets */; };
+		5F9F38492C67C6D10004CCF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F38102C678F490004CCF5 /* Assets.xcassets */; };
+		5F9F384A2C67C6D10004CCF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F38102C678F490004CCF5 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +75,7 @@
 		5F9F383A2C678FD30004CCF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F9F383B2C678FD30004CCF5 /* DelaverySheildConfiguration.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DelaverySheildConfiguration.entitlements; sourceTree = "<group>"; };
 		5F9F38422C6790130004CCF5 /* Delavery-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Delavery-iOS.entitlements"; sourceTree = "<group>"; };
+		5F9F38452C67C68A0004CCF5 /* ColorAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAsset.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,7 @@
 				5F9F380E2C678F470004CCF5 /* ContentView.swift */,
 				5F9F38102C678F490004CCF5 /* Assets.xcassets */,
 				5F9F38122C678F490004CCF5 /* Preview Content */,
+				5F9F38452C67C68A0004CCF5 /* ColorAsset.xcassets */,
 			);
 			path = "Delavery-iOS";
 			sourceTree = "<group>";
@@ -274,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9F38462C67C68A0004CCF5 /* ColorAsset.xcassets in Resources */,
 				5F9F38142C678F490004CCF5 /* Preview Assets.xcassets in Resources */,
 				5F9F38112C678F490004CCF5 /* Assets.xcassets in Resources */,
 			);
@@ -283,6 +291,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9F38492C67C6D10004CCF5 /* Assets.xcassets in Resources */,
+				5F9F38472C67C68A0004CCF5 /* ColorAsset.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +300,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9F384A2C67C6D10004CCF5 /* Assets.xcassets in Resources */,
+				5F9F38482C67C68A0004CCF5 /* ColorAsset.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
