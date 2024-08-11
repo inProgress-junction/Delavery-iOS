@@ -71,7 +71,7 @@ extension DelaveryAPI {
         switch self {
         case .searchAccount:
             return [
-                "type": "SPENDING"
+                "type": "saving"
             ]
         case .withdrawal(let amount):
             return [

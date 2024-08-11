@@ -67,7 +67,7 @@ struct SavingView2: View {
                     SelectBankView(bank: $bankType, showModal: $showBankModal)
                 } else {
                     NavigationLink {
-                        SavingView1(totalBalance: $totalBalance)
+                        SavingView1(totalBalance: $totalBalance, isWithdrawal: true)
                     } label: {
                         RoundedRectangle(cornerRadius: 15)
                             .fill(Color.lightBlue)

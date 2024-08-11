@@ -87,7 +87,7 @@ struct DelaveryTabView: View {
                                     .font(.system(size: 13, weight: .regular))
                                     .padding(.bottom, 17)
                                 NavigationLink {
-                                    SavingView1(totalBalance: $assetValue, isWithdrawal: true)
+                                    SavingView1(totalBalance: $assetValue)
                                         .onAppear {
                                             isModalPresented = false
                                         }
