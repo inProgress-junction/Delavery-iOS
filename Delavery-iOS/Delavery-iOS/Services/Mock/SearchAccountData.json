@@ -1,0 +1,8 @@
+{
+    "id": "string",
+    "userName": "string",
+    "money": 100000,
+    "accountNumber": 0,
+    "bankType": "string",
+    "bankAccountType": "string"
+}
