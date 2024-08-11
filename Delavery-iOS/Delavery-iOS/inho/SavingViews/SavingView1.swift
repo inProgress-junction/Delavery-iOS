@@ -114,9 +114,9 @@ struct SavingView1: View {
     func MoneyUnitButton(money: Int) -> some View {
         Button("+" + money.toDemical()) {
             if isWithdrawal {
-                balance = balance + money
-            } else {
                 balance = min(totalBalance, balance + money)
+            } else {
+                balance = balance + money
             }
         }
         .font(.system(size: 12))

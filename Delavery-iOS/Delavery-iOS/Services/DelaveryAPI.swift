@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 enum DelaveryAPI {
-    case searchAccount
+    case searchAccount(Bool)
     case withdrawal(Int)
     case transfer(Int)
     case challengeState
@@ -69,9 +69,9 @@ extension DelaveryAPI {
     
     var parameters: Parameters? {
         switch self {
-        case .searchAccount:
+        case .searchAccount(let isSpending):
             return [
-                "type": "saving"
+                "type": isSpending ? "spending" : "saving"
             ]
         case .withdrawal(let amount):
             return [

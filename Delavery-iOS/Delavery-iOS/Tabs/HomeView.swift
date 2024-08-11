@@ -27,7 +27,7 @@ struct HomeView: View {
             }
             .padding(.horizontal, 16)
             NavigationLink {
-                SavingView2(totalBalance: $assetValue)
+                SavingView2()
             } label: {
                 RoundedRectangle(cornerRadius: 15)
                     .fill(Color(uiColor: UIColor(hex: 0x5E84E7)))
@@ -118,7 +118,7 @@ struct HomeView: View {
             
             let service = DelaveryAPIService()
             Task {
-                let result = await service.request(api: .searchAccount, dtoType: SearchAccountDTO.self)
+                let result = await service.request(api: .searchAccount(true), dtoType: SearchAccountDTO.self)
                 switch result {
                 case .success(let success):
                     if let account = success as? SearchAccountEntity {

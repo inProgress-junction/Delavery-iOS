@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SavingView2: View {
-    @Binding var totalBalance: Int
+    @State var totalBalance: Int = 0
     @State var accountNumber = ""
     @State var showBankModal = false
     @State var bankType: BankType?
@@ -68,6 +68,21 @@ struct SavingView2: View {
                 } else {
                     NavigationLink {
                         SavingView1(totalBalance: $totalBalance, isWithdrawal: true)
+                            .onAppear {
+                                Task {
+                                    let result = await DelaveryAPIService().request(api: .searchAccount(false), dtoType: SearchAccountDTO.self)
+                                    switch result {
+                                    case .success(let success):
+                                        if let account = success as? SearchAccountEntity {
+                                            withAnimation {
+                                                self.totalBalance = account.money
+                                            }
+                                        }
+                                    case .failure:
+                                        return
+                                    }
+                                }
+                            }
                     } label: {
                         RoundedRectangle(cornerRadius: 15)
                             .fill(Color.lightBlue)
