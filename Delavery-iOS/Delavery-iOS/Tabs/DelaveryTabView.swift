@@ -34,8 +34,9 @@ struct DelaveryTabView: View {
                                     selectedTab = "home"
                                 } label: {
                                     VStack {
-                                        Image(systemName: "house")
+                                        Image("house")
                                             .resizable()
+                                            .renderingMode(.template)
                                             .frame(width: 30, height: 30)
                                         Text("home")
                                     }
@@ -50,8 +51,9 @@ struct DelaveryTabView: View {
                                     selectedTab = "apps"
                                 } label: {
                                     VStack {
-                                        Image(systemName: "square.split.2x2")
+                                        Image("square.split")
                                             .resizable()
+                                            .renderingMode(.template)
                                             .frame(width: 30, height: 30)
                                         Text("Locked Apps")
                                     }
