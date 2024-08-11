@@ -70,7 +70,7 @@ struct SavingView2: View {
                         SavingView1(totalBalance: $totalBalance, isWithdrawal: true)
                             .onAppear {
                                 Task {
-                                    let result = await DelaveryAPIService().request(api: .searchAccount(false), dtoType: SearchAccountDTO.self)
+                                    let result = await DelaveryAPIService().request(api: .searchAccount(true), dtoType: SearchAccountDTO.self)
                                     switch result {
                                     case .success(let success):
                                         if let account = success as? SearchAccountEntity {

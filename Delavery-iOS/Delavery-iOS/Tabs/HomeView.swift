@@ -118,7 +118,7 @@ struct HomeView: View {
             
             let service = DelaveryAPIService()
             Task {
-                let result = await service.request(api: .searchAccount(true), dtoType: SearchAccountDTO.self)
+                let result = await service.request(api: .searchAccount(false), dtoType: SearchAccountDTO.self)
                 switch result {
                 case .success(let success):
                     if let account = success as? SearchAccountEntity {
